@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.max-h-550 {
+  max-height: 550px;
+}
+
+@layer components {
+  p {
+    @apply leading-8 tracking-wide mb-6;
+  }
+  .single img {
+    @apply object-cover my-2;
+  }
+  .art-single img {
+    @apply object-cover my-0 rounded-md;
+  }
+
+  .single h3 {
+    @apply text-xl tracking-wider font-medium border-b border-sky-700 pb-2 my-8;
+  }
+
+  .single h4 {
+    @apply text-xl tracking-wider font-medium pb-2 my-8;
+  }
+}
